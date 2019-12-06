@@ -4,7 +4,7 @@ import './Header.css'
 const Header = () => {
 
     return (
-<h1>Snowbank</h1>
+<h1 className="header">Snowbank</h1>
 )
 
 }
