@@ -3,6 +3,7 @@ import './index.css';
 import NotFound from "./NotFound";
 import App from './App';
 import DisplayAccounts from "./displayAccounts";
+import DisplayAccountsAbove from "./displayAccountsAbove";
 import {Route, Link, BrowserRouter as Router, Switch} from 'react-router-dom'
 
 class Routes extends React.Component {
@@ -18,13 +19,13 @@ class Routes extends React.Component {
             <Link to="/accounts">All accounts</Link>
             </li>
             <li>
-            <Link to="/accounts">Accounts over £500</Link>
+            <Link to="/accounts/500/morethan">Accounts over £500</Link>
             </li>
             <li>
-            <Link to="/accounts">Accounts over £1,000</Link>
+            <Link to="/accounts/1000/morethan">Accounts over £1,000</Link>
             </li>
             <li>
-            <Link to="/accounts">Accounts over £10,000</Link>
+            <Link to="/accounts/10000/morethan">Accounts over £10,000</Link>
             </li>
             </ul>
             <Switch>
