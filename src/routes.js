@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
 import Users from "./Users";
 import Contact from "./Contact";
@@ -7,7 +6,7 @@ import NotFound from "./NotFound";
 import App from './App';
 import {Route, Link, BrowserRouter as Router, Switch} from 'react-router-dom'
 
-class Routing extends React.Component {
+class Routes extends React.Component {
     render() {
         return (
             <Router>
@@ -35,7 +34,7 @@ class Routing extends React.Component {
     }
 }
 
-ReactDOM.render(<Routing />, document.getElementById('root'));
+export default Routes
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
