@@ -11,7 +11,7 @@ const DisplayAccounts = () => {
     </ul>
 )
     return (
-        <div>
+        <div className="accountContainer">
         {accountDetails}
         </div>
     )
