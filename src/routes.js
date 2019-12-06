@@ -14,7 +14,7 @@ class Routes extends React.Component {
             <Link to="/">Home</Link>
             </li>
             <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/accounts">DisplayAccounts</Link>
             </li>
             <li>
             <Link to="/users">Users</Link>
@@ -22,7 +22,7 @@ class Routes extends React.Component {
             </ul>
             <Switch>
             <Route exact path="/" component={App}/>
-        <Route path="/users" component={DisplayAccounts}/>
+        <Route path="/accounts" component={DisplayAccounts}/>
         <Route path="/contact" component={Contact}/>
         <Route component={NotFound}/>
         </Switch>
