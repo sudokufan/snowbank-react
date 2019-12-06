@@ -17,14 +17,10 @@ class Routes extends React.Component {
             <li>
             <Link to="/accounts">DisplayAccounts</Link>
             </li>
-            <li>
-            <Link to="/users">Users</Link>
-            </li>
             </ul>
             <Switch>
             <Route exact path="/" component={App}/>
         <Route path="/accounts" component={DisplayAccounts}/>
-        <Route path="/contact" component={Contact}/>
         <Route component={NotFound}/>
         </Switch>
         </div>
@@ -34,7 +30,3 @@ class Routes extends React.Component {
 }
 
 export default Routes
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
