@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import NotFound from "./NotFound";
 import App from './App';
 import DisplayAccounts from "./displayAccounts";
 import {Route, Link, BrowserRouter as Router, Switch} from 'react-router-dom'
