@@ -1,7 +1,7 @@
 import React from "react";
-import './displayAccounts.css'
+import './Header.css'
 
-function DisplayAccounts(){
+function Header(){
 
     return (
 <h1>Snowbank</h1>
