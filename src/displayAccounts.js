@@ -9,12 +9,12 @@ function DisplayAccounts(){
         <li>{account.name}</li>
         <li>{account.balance}</li>
     </div>
-);
+)
     return (
         <div>
         {accountDetails}
         </div>
-    );
+    )
 
 }
 
