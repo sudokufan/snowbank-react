@@ -1,14 +1,21 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import useAccounts from './useAccounts'
 
+function DisplayAccounts(){
+    const accounts = useAccounts()
+    const accountDetails = accounts.map((account) =>
+        <div>
+        <li>{account.name}</li>
+        <li>{account.balance}</li>
+    </div>
+);
+    return (
+        <div>
+        {accountDetails}
+        </div>
+    );
 
-const displayAccounts = () => {
-    render()
-    {
-        return(
-        useAccounts()
-        )}
 }
 
 
-export default displayAccounts
+export default DisplayAccounts
