@@ -15,12 +15,24 @@ class Routes extends React.Component {
             <Link to="/">Home</Link>
             </li>
             <li>
-            <Link to="/accounts">DisplayAccounts</Link>
+            <Link to="/accounts">All accounts</Link>
+            </li>
+            <li>
+            <Link to="/accounts">Accounts over £500</Link>
+            </li>
+            <li>
+            <Link to="/accounts">Accounts over £1,000</Link>
+            </li>
+            <li>
+            <Link to="/accounts">Accounts over £10,000</Link>
             </li>
             </ul>
             <Switch>
             <Route exact path="/" component={App}/>
         <Route path="/accounts" component={DisplayAccounts}/>
+        <Route path="/accounts/500/morethan" component={DisplayAccountsAbove}/>
+        <Route path="/accounts/1000/morethan" component={DisplayAccountsAbove}/>
+        <Route path="/accounts/10000/morethan" component={DisplayAccountsAbove}/>
         <Route component={NotFound}/>
         </Switch>
         </div>
