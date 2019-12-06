@@ -5,10 +5,10 @@ import './displayAccounts.css'
 function DisplayAccounts(){
     const accounts = useAccounts()
     const accountDetails = accounts.map((account) =>
-        <div>
+        <ul className="accountList">
         <li>{account.name}</li>
         <li>{account.balance}</li>
-    </div>
+    </ul>
 )
     return (
         <div>
