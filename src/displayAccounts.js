@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import useAccounts from './useAccounts'
+import './displayAccounts.css'
 
 function DisplayAccounts(){
     const accounts = useAccounts()
