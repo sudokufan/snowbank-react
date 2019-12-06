@@ -1,0 +1,9 @@
+.accountContainer {
+    overflow: auto;
+}
+
+.accountList {
+    width: 33%;
+    font-size: 3rem;
+    float: left;
+}
