@@ -1,7 +1,7 @@
 import React from "react";
 import './Header.css'
 
-function Header(){
+const Header = () => {
 
     return (
 <h1>Snowbank</h1>
