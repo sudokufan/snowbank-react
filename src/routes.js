@@ -1,9 +1,7 @@
 import React from 'react';
 import './index.css';
-import Users from "./Users";
-import Contact from "./Contact";
-import NotFound from "./NotFound";
 import App from './App';
+import DisplayAccounts from "./displayAccounts";
 import {Route, Link, BrowserRouter as Router, Switch} from 'react-router-dom'
 
 class Routes extends React.Component {
@@ -24,7 +22,7 @@ class Routes extends React.Component {
             </ul>
             <Switch>
             <Route exact path="/" component={App}/>
-        <Route path="/users" component={Users}/>
+        <Route path="/users" component={DisplayAccounts}/>
         <Route path="/contact" component={Contact}/>
         <Route component={NotFound}/>
         </Switch>
