@@ -4,7 +4,8 @@
 
 .accountList {
     width: 33%;
-    font-size: 3rem;
+    font-size: 3.5rem;
     float: left;
     text-align: center;
+    padding-left: 0px;
 }

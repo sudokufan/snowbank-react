@@ -7,7 +7,7 @@ const DisplayAccounts = () => {
     const accountDetails = accounts.map((account) =>
         <ul className="accountList">
         <li>{account.name}</li>
-        <li>{account.balance}</li>
+        <li>£{account.balance}</li>
     </ul>
 )
     return (
