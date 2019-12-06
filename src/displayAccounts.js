@@ -1,19 +1,13 @@
 import React from "react";
+import useAccounts from './useAccounts'
 
 
-useAccounts = () => {
-    const [accounts, setAccounts] = useState([])
-
-    useEffect(()=>{
-        fetch('http://localhost:8000/accounts')
-            .then((data)=>{return data.json()})
-            .then((data)=>{
-
-                setAccounts()
-            })
-    })
-
-
+const displayAccounts = () => {
+    render()
+    {
+        return(
+        useAccounts()
+        )}
 }
 
 
