@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import useAccounts from './useAccounts'
 import './displayAccounts.css'
 
-function DisplayAccounts(){
+const DisplayAccounts = () => {
     const accounts = useAccounts()
     const accountDetails = accounts.map((account) =>
         <ul className="accountList">
